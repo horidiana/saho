@@ -1,0 +1,97 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f1;
+    font-family: calibri;
+    background-image:url(../images/background1.jpg);
+    background-size: 1500px;
+}
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/*propiedades de la barra superior*/
+.logo{
+    width: 200px;
+    height: 70px;
+    float: left;
+    padding-top: 5px;
+	line-height:100px;
+}
+nav{
+    float: right;
+}
+
+header{
+    width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+}
+
+.menu{
+    float: right;
+    line-height: 100px;
+}
+
+nav ul li{ 
+    list-style: none;
+    margin-right: 70px;
+    padding: 30px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #dff7ff;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: widt 1.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/*Materias*/
+.content_mat{/*propiedades del contenedor*/
+    
+        width: 1240px;
+        height: 2500px;
+        float: right;
+        margin-right:6.5%;/*deja un espacio a la derecha del 2% de la pantalla*/
+        margin-top: 150px;
+        background-color: hsl(216, 78%, 82%);
+        border-radius: 1%;/*le da un borde redondeado al elemento*/
+        text-align: center;/*los textos y titulos se alienan al centro*/
+    
+}
+
+img{
+    margin: 0 px;
+    width: 450px;
+    height: 500px;
+}

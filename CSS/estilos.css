@@ -1,0 +1,220 @@
+*{
+    padding: 0;  /*posiciona todos los elemetos al inicio de la pantalla*/
+    margin: 0;  /*posiciona todos los elemetos al inicio de la pantalla*/
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f1;
+    font-family: calibri;/*fuente de las letras*/
+    background-image:url(../images/background.png);/*direccion: imagen de fondo*/
+    background-size: 1500px;/*tamaño de la imagen de fondo*/
+}
+
+.capa{
+    position: fixed; /*permite posicinar el div*/
+    width: 100%;/*tamaño de la pantalla*/
+    height: 100vh;
+    background: rgba(0,0,0,0.6);/*color obscuro en codigo RGB, grado de transparencia 0.6*/
+    z-index: -1;/*envia al fondo el div*/
+    top: 0;left: 0;/*posicion al inico de la pantalla*/
+}
+/*propiedades de la barra superior*/
+
+nav{
+
+    position: absolute;/*posiciona el elemento*/
+    display: flex;/*permite posicionar los elementos en su interior*/
+    justify-content: space-around;/*distribuye el espacio entre elementos*/
+    width: 100%;
+}
+
+header{/*posiciona la barra de navegacion en la parte superior*/
+          width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+        z-index: 10;/*los elementos del header se llevan enfrente o encima de los demas elementos*/
+}
+
+
+
+ul{
+    list-style: none;/*no hay viñetas o marcadores en la lista*/
+    
+}
+
+ul li {
+    
+    display: inline-block;/*posiciona el elemneto a lado del otro */
+    position: relative;/*ayuda al anterior*/
+}
+
+ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+/*menu desplegable*/
+ul li ul.dropdown li{
+    display: block;
+    
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #343535;
+    position: absolute;
+    
+    display: none;
+}
+ul li:hover ul.dropdown{/*el menu se despliga con el cursor encima*/
+    
+    display: block;
+    
+ 
+}
+
+nav ul li{ 
+    list-style: none;
+    margin-right: 30px;/*deja un espacio entre los elementos de la lista*/
+    padding: 30px 0;
+    float: left;
+    position: relative;
+
+}
+
+nav ul li a{/*propiedades de los hipervinculos de la lista*/
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a::before{/*despliega la linea con el cursor encima*/
+    display: block;
+    content: '';
+    width: 0%;
+    background: #fff;
+    height: 5px;
+    top: 0;/*posiciona la linea*/
+    position: absolute;/*permite dictar la ubicacion*/
+    transition: widt 1.2s;/*tiempo de ejecucuion de animacion*/
+}
+
+nav ul li a:hover::before{
+    width: 70%;/*tamaño de la linea con el cursor encima*/
+}
+
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.content_img{
+    margin-top: 50px;
+    display: flex;/*permite posicionar el elemnto*/
+    justify-content: center;
+    margin-bottom: 50px;/*deja espacio debajo del elemento*/
+}
+.img-banner{
+    margin-top: 50px;
+    height: 400px;
+    width: 800px;
+}
+/*imagenes*/
+.container_n{
+    width: 1240px;
+    height: 500px;
+    float: right;
+    margin-right: 85px;
+    margin-top:150px ;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    border-radius: 1%;/*redondea bordes en el elemento*/
+}
+#contentpuntitos{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+#contentpuntitos > a{/*propiedades de los puntitos*/
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(155, 148, 148);
+}
+#Contenedor_de_carrusel{/*propiedades de los banners*/
+    height: 530px;
+    width: 100%;
+    overflow: hidden;/*oculta las imagenes*/
+   
+    }
+    
+    .itemCarrusel{
+        height: 100%;
+        position: relative;
+        border-radius: 30px;
+    }
+    .tarjetas{
+        background-color: #83d5d4;
+        height: 100%;
+        display: flex;
+    }
+/*Redes sociales*/
+#titulos{
+    padding-top: 60px;
+    text-align: center;
+    background-color: #fff;
+}
+#ContenedorRedes{
+    margin-top: 50px;/*los bordes dan la ilucion de una imagen redonda*/
+    height: 200px;
+    width: 100%;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+#RedSocial1{
+    
+    height: 180px;
+    width: 180px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#RedSocial2
+{
+    
+    height: 180px;
+    width: 180px;
+    padding:10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+#RedSocial3{
+   
+    height: 180px;
+    width: 180px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#RedSocial4{
+    
+    height: 180px;
+    width: 180px;
+    padding:10px;
+    margin-left: 10px;
+}
